@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="//ej2.syncfusion.com/javascript/demos/dialog/components-dialog/datasource.js" type="text/javascript">
+        </script>
+          <script src="//ej2.syncfusion.com/javascript/demos/grid/default/datasource.js" type="text/javascript"></script>
+        <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="/style.css">
+        
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/loader.js" defer></script>
+        <script src="js/fetchdata.js" defer></script>
+        <script src="js/localforage.min.js"></script>
+        <script src="js/filter.js" defer></script>
+        <script src="js/nav.js" defer></script>
+        <script src="js/modal.js" defer></script>
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('serviceworker.js').then(() => {
+                    console.log('Service worker registerd')
+                })
+            }
+        </script>
+        
+    </head>
+    <body>
+        
+        <div class="navigation" id="myTopnav">
+        <nav>
+            
+
+            <h3 class="title-text">Welcome! Choose Your Ideal Recipe!</h3>
+            
+           
+            <a class="active"  value = 'introduction'>Introduction</a>
+            <a  value = 'mision'>Mision</a>
+            <a  value = 'vision'>Vision</a>
+        
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+                
+        </nav>
+            </div>
+        
+   
+<!-- </div>
+</div>
+        <div class="intro-description">Select your receipts based on Areas 
+            </div> -->
+            <!-- <div class="wraper"> -->
+
+                
+        <div class="header-container">
+            
+            <div class="image-bar">
+            <img  src ="./images/lastimage.jpg" alt="cooking"> 
+        
+            <div class="input-search">
+                <label for="searchbox">Search</label>
+                    <input type="search" 
+                    placeholder="Enter Dish Name" oninput="liveSearch()"
+                    id="searchbox">
+                </div>
+                </div>
+
+                <div class="nav-data">
+                    <div id="introduction" value = 'introduction'></div>
+                     
+                     
+                        <div id="mision" value = 'mision'></div>
+                   
+                    <div id="vision" value = 'vision'></div>
+           
+            
+                
+        </div>
+             <!-- <div class="nav-data">
+            <div id="introduction" value = 'introduction'></div>
+             
+             
+                <div id="mision" value = 'mision'></div>
+           
+            <div id="vision" value = 'vision'></div>
+        
+        </div> -->
+      
+        </div>
+
+
+        
+    
+    <div class="page">
+    <div class="container">
+    
+        <header>
+           
+        </header>
+    <section>
+
+    </section>
+    
+        <div id="display-cards">
+            
+       
+</div>
+      
+    </div>
+
+    
+    <!-- // <section class="modal-table hidden" id="${idMeal}">
+   
+        // <button class="btn-close">X</button>
+        // </section> -->
+    <div class="modal-table hidden">
+       
+    <button class="btn-close">X</button> 
+    <h6 class="show-title"></h6>
+    <!-- <div class="overlay hidden"> 
+</div> -->
+
+</div>
+</div>
+<div id="loading"></div>
+    </body>
+   
+</html>
+
