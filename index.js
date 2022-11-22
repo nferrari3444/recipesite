@@ -88,19 +88,19 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
-// app.use(express.static('public'));
+app.use(express.static('public'));
 
-app.use(express.static(path.join(__dirname,'/client/build')))
+// app.use(express.static(path.join(__dirname,'/client/build')))
 
-app.get('*', (req,res) => {
-    res.sendFile(path.join(__dirname + '/client/build/index.html'))
-})
+// app.get('*', (req,res) => {
+//     res.sendFile(path.join(__dirname + '/client/build/index.html'))
+// })
 
 
-// app.get('/', (req, res) => {
+app.get('/', (req, res) => {
 
-//     res.send('hola hola');
-// });
+    res.send('hola hola');
+});
 
 
 app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
